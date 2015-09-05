@@ -1,0 +1,22 @@
+{
+  "name": "test-makara",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Michael Quacinella <michael.quacinella@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dustjs-helpers": "~1.7.3",
+    "dustjs-linkedin": "~2.7.2",
+    "jquery": "~2.1.4"
+  }
+}

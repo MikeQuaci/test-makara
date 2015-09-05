@@ -1,0 +1,1 @@
+(function(dust){dust.register("partial-usecontent",body_0);function body_0(chk,ctx){return chk.h("useContent",ctx,{"block":body_1},{"bundle":"partial-usecontent.properties"},"h");}body_0.__dustBody=!0;function body_1(chk,ctx){return chk.w("<span> ").h("message",ctx,{},{"key":"greeting"},"h").w(" </span>");}body_1.__dustBody=!0;return body_0}(dust));

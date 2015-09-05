@@ -1,0 +1,14 @@
+{>"layouts/master" /}
+
+{<body}
+   
+    <div id="use-contet-container">
+	  	{>partial-usecontent/}	    	
+	</div>
+	<div id="container">
+		{>partial/}	
+	</div>
+	<input id = "btnSubmit0" type="submit" value="useContet partial">
+	<input id = "btnSubmit1" type="submit" value="no useContent">
+	</input>
+{/body}

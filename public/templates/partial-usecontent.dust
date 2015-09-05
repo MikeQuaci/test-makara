@@ -1,0 +1,3 @@
+{@useContent bundle="partial-usecontent.properties"}
+	<span> {@message key="greeting"/} </span>
+{/useContent}

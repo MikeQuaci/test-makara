@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{+title /}</title>
+    
+        <link rel="stylesheet" href="/css/app.css">
+    
+    </head>
+    <body>
+
+        <div id="wrapper">
+            {+body /}
+        </div>
+        
+        <script type="text/javascript" src="/components/jquery/dist/jquery.min.js" ></script>
+        
+        {!Dustjs for browser side!}
+        <script src="/components/dustjs-linkedin/dist/dust-full.min.js" ></script>  <!-- full required just for dust-makara-helpers-->
+        
+        <script src="/components/dustjs-helpers/dist/dust-helpers.min.js" ></script>  
+
+        {!Browserifyied app.js bundle!}
+        <script type="text/javascript" src="js/app-bundle.js" ></script>
+       
+        <script src="/en-US/_languagepack.js" ></script>
+
+        
+    
+    </body>
+</html>
