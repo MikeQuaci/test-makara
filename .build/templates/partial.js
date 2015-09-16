@@ -1,1 +1,0 @@
-(function(dust){dust.register("partial",body_0);function body_0(chk,ctx){return chk.w("<span> ").h("message",ctx,{},{"key":"greeting"},"h").w(" </span>");}body_0.__dustBody=!0;return body_0}(dust));
