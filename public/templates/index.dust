@@ -1,6 +1,11 @@
 {>"layouts/master" /}
 
 {<body}
+	
+	{@useContent bundle="index.properties"}
+		<span> {@message key="greeting"/} </span>
+
+	{/useContent}
    
     <div id="use-contet-container">
 	  	{>partial-usecontent/}	    	
@@ -11,4 +16,14 @@
 	<input id = "btnSubmit0" type="submit" value="useContet partial">
 	<input id = "btnSubmit1" type="submit" value="no useContent">
 	</input>
+
+	  <div class="lang">
+            <ul class="nm-np inline">
+                <li><a href="/setLanguage/EN-us">English</a></li>
+                <li><a href="/setLanguage/ES-es">Spanish</a></li>
+                 <li><a href="/setLanguage/IT-it">Italian</a></li>
+            </ul>
+        </div>
+
+    {@contextDump key="full" to="output"/}
 {/body}

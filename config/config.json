@@ -10,12 +10,12 @@
 
     
     "view engines": {
-        "js": {
+        "dust": {
             "module": "makara",
             "renderer": {
-                "method": "js",
+                "method": "dust",
                 "arguments": [
-                    { "cache": true, "helpers": "config:dust.helpers" }
+                    { "cache": false, "helpers": "config:dust.helpers" }
                 ]
             }
         }
@@ -24,16 +24,18 @@
     "dust": {
         "helpers": [
     
-            "dust-makara-helpers"
+            {"name": "dust-makara-helpers",
+            "arguments": { "autoloadTemplateContent": true }},
+            "dustjs-helpers"
     
         ]
     },
-    
+    "bundle engine": "dust",
 
     
     "i18n": {
         "contentPath": "path:./locales",
-        "fallback": "en-US"
+        "fallback": "es-ES"
     },
     
 
@@ -54,6 +56,23 @@
                         "specialization": "config:specialization"
                     }
                 ]
+            }
+        },
+
+        "locale": {
+            "priority": 95,
+            "enabled": true,
+            "module": {
+                "name": "path:./lib/locale"
+            }
+        },
+
+         "bcp47": {
+            "priority": 10,
+            "enabled": true,
+            "module": {
+                "name": "express-bcp47",
+                "arguments": [ { "defaultLocale": "en-US", "vary": true } ]
             }
         },
         

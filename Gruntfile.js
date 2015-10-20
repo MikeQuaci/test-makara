@@ -9,6 +9,7 @@ module.exports = function (grunt) {
     });
 
         grunt.loadNpmTasks('grunt-makara-browserify');
+        grunt.registerTask('i18n', [ 'makara-browserify' ]);
     
     
     // Register group tasks

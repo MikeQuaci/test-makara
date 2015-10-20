@@ -17,8 +17,8 @@
         
         {!Dustjs for browser side!}
         <script src="/components/dustjs-linkedin/dist/dust-full.min.js" ></script>  <!-- full required just for dust-makara-helpers-->
-        
         <script src="/components/dustjs-helpers/dist/dust-helpers.min.js" ></script>  
+       <!-- <script src="/components/dust-makara-helpers/browser.js" ></script>  -->
 
         {!Browserifyied app.js bundle!}
         <script type="text/javascript" src="js/app-bundle.js" ></script>
